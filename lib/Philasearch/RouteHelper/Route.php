@@ -8,14 +8,14 @@
  * @version   1.0.0
  */
 
-namespace RubyRainbows\RouteHelper;
+namespace Philasearch\RouteHelper;
 
 /**
  * Class Route
  *
  * This class interfaces with route classes to make routes
  *
- * @package RubyRainbows\RouteHelper
+ * @package Philasearch\RouteHelper
  */
 
 class Route

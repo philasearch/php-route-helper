@@ -1,6 +1,6 @@
 <?php
 
-use RubyRainbows\RouteHelper\RouteCleaner as RouteCleaner;
+use Philasearch\RouteHelper\RouteCleaner as RouteCleaner;
 
 class RouteCleanerTest extends TestCase
 {
@@ -21,7 +21,7 @@ class RouteCleanerTest extends TestCase
     }
 
     /**
-     *  @expectedException RubyRainbows\RouteHelper\Exceptions\RouteMissingParameterException
+     *  @expectedException Philasearch\RouteHelper\Exceptions\RouteMissingParameterException
      *  @expectedExceptionMessage Route is missing a required parameter: bar.
      */
     public function testMakeRouteWithOneMissingRequiredParameter ()

@@ -8,16 +8,16 @@
  * @version   1.0.0
  */
 
-namespace RubyRainbows\RouteHelper;
+namespace Philasearch\RouteHelper;
 
-use RubyRainbows\RouteHelper\Exceptions\RouteMissingParameterException as ParamMissing;
+use Philasearch\RouteHelper\Exceptions\RouteMissingParameterException as ParamMissing;
 
 /**
  * Class RouteCleaner
  *
  * Cleans the routes and returns 
  *
- * @package RubyRainbows\RouteHelper
+ * @package Philasearch\RouteHelper
  */
 class RouteCleaner
 {

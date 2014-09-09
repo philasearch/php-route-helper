@@ -8,14 +8,14 @@
  * @version   1.0.0
  */
 
-namespace RubyRainbows\RouteHelper\Exceptions;
+namespace Philasearch\RouteHelper\Exceptions;
 
 /**
  * Class RouteNotFoundException
  *
  * An exception for route issues
  *
- * @package RubyRainbows\RouteHelper\Exceptions
+ * @package Philasearch\RouteHelper\Exceptions
  */
 class RouteNotFoundException extends \Exception
 {

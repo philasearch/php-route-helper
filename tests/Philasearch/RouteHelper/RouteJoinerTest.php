@@ -1,6 +1,6 @@
 <?php
 
-use RubyRainbows\RouteHelper\RouteJoiner as RouteJoiner;
+use Philasearch\RouteHelper\RouteJoiner as RouteJoiner;
 
 class RouteJoinerTest extends TestCase
 {
@@ -24,7 +24,7 @@ class RouteJoinerTest extends TestCase
     /**
      * @dataProvider invalidJoinProvider
      * 
-     * @expectedException RubyRainbows\RouteHelper\Exceptions\InvalidRouteJoinException
+     * @expectedException Philasearch\RouteHelper\Exceptions\InvalidRouteJoinException
      */
     public function testInvalidJoin ( $routes )
     {

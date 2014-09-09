@@ -1,6 +1,6 @@
 <?php
 
-use RubyRainbows\RouteHelper\RouteArray as RouteArray;
+use Philasearch\RouteHelper\RouteArray as RouteArray;
 
 class RouteArrayTest extends TestCase
 {
@@ -23,7 +23,7 @@ class RouteArrayTest extends TestCase
     }
 
     /**
-     *  @expectedException RubyRainbows\RouteHelper\Exceptions\RouteNotFoundException
+     *  @expectedException Philasearch\RouteHelper\Exceptions\RouteNotFoundException
      */
     public function testMissingGetRoute ()
     {

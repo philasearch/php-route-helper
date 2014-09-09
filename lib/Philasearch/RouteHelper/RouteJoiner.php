@@ -8,16 +8,16 @@
  * @version   1.0.0
  */
 
-namespace RubyRainbows\RouteHelper;
+namespace Philasearch\RouteHelper;
 
-use RubyRainbows\RouteHelper\Exceptions\InvalidRouteJoinException as InvalidJoin;
+use Philasearch\RouteHelper\Exceptions\InvalidRouteJoinException as InvalidJoin;
 
 /**
  * Class RouteJoiner
  *
  * This class joins multiple routes together
  *
- * @package RubyRainbows\RouteHelper
+ * @package Philasearch\RouteHelper
  */
 class RouteJoiner
 {

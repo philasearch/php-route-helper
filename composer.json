@@ -1,14 +1,13 @@
 {
-    "name": "rubyrainbows/route-helper",
+    "name": "philasearch/route-helper",
     "description": "A route helper library for PHP",
     "minimum-stability": "stable",
-    "license": "MIT",
-    "homepage": "https://github.com/rubyrainbows/php-route-helper",
-    "version": "1.0.3",
+    "homepage": "https://github.com/philasearch/php-route-helper",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Thomas Muntaner",
-            "email": "thomas.muntaner@rubyrainbows.com"
+            "email": "muntaner@philasearch.com"
         }
     ],
     "require": {
@@ -19,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RubyRainbows\\": "lib/RubyRainbows/"
+            "Philasearch\\": "lib/Philasearch/"
         }
     }
 }

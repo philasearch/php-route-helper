@@ -8,9 +8,9 @@
  * @version   1.0.0
  */
 
-namespace RubyRainbows\RouteHelper;
+namespace Philasearch\RouteHelper;
 
-use RubyRainbows\RouteHelper\Exceptions\RouteNotFoundException as NotFound;
+use Philasearch\RouteHelper\Exceptions\RouteNotFoundException as NotFound;
 
 /**
  * Class RouteArray
@@ -18,7 +18,7 @@ use RubyRainbows\RouteHelper\Exceptions\RouteNotFoundException as NotFound;
  * This class gets the routes from a route file and 
  * returns/finds them.
  *
- * @package RubyRainbows\RouteHelper
+ * @package Philasearch\RouteHelper
  */
 class RouteArray
 {

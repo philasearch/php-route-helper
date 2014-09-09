@@ -1,6 +1,6 @@
 <?php
 
-use RubyRainbows\RouteHelper\Route as Route;
+use Philasearch\RouteHelper\Route as Route;
 
 class RouteTest extends TestCase
 {
@@ -14,9 +14,9 @@ class RouteTest extends TestCase
     {
         parent::setUp();
 
-        $this->routeArray   = $this->mock( 'RubyRainbows\RouteHelper\RouteArray' );
-        $this->routeCleaner = $this->mock( 'RubyRainbows\RouteHelper\RouteCleaner' );
-        $this->routeJoiner  = $this->mock( 'RubyRainbows\RouteHelper\RouteJoiner' );
+        $this->routeArray   = $this->mock( 'Philasearch\RouteHelper\RouteArray' );
+        $this->routeCleaner = $this->mock( 'Philasearch\RouteHelper\RouteCleaner' );
+        $this->routeJoiner  = $this->mock( 'Philasearch\RouteHelper\RouteJoiner' );
 
         $this->route = new Route( $this->fixturesPath . '/routes.php', $this->routeArray, $this->routeCleaner, $this->routeJoiner );
     }
