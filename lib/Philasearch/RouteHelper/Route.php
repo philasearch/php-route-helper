@@ -31,15 +31,28 @@ class Route
         $this->routeJoiner  = ( $routeJoiner != null ) ? $routeJoiner : new RouteJoiner();
     }
 
+    public function currentRoute ( $params=[] )
+    {
+        $route = strtok($_SERVER["REQUEST_URI"],'?');
+
+        return $this->generateRoute( $route, $params );
+    }
+
     public function route ( $name, $params=[] )
     {
         $route = $this->routeArray->getRoute( $name );
 
-        return $this->routeCleaner->makeRoute( $route, $params );
+        return $this->generateRoute( $route, $params );
     }
 
     public function join ( $routes )
     {
         return $this->routeJoiner->join ( $routes );
     }
+
+    private function generateRoute ( $route, $params=[] )
+    {
+        return $this->routeCleaner->makeRoute( $route, $params );
+    }
+
 }
