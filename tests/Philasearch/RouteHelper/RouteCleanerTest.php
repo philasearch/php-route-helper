@@ -21,11 +21,11 @@ class RouteCleanerTest extends TestCase
         $params = ['id' => 'bar', 'param1' => 'foo1', 'param2' => 'foo2'];
         $this->assertEquals( '/foo/bar?param1=foo1&param2=foo2', $this->routeCleaner->makeRoute( '/foo/:id', $params) );
 
-        $params = ['main_id' => 'foo', 'id' => 'bar'];
-        $this->assertEquals( '/foo/foo/bar?', $this->routeCleaner->makeRoute( '/foo/:main_id/:id', $params) );
+        $params = ['mainId' => 'foo', 'id' => 'bar'];
+        $this->assertEquals( '/foo/foo/bar?', $this->routeCleaner->makeRoute( '/foo/:mainId/:id', $params) );
 
-        $params = ['main_id' => 'foo', 'id' => 'bar:'];
-        $this->assertEquals( '/foo/foo/bar:?', $this->routeCleaner->makeRoute( '/foo/:main_id/:id', $params) );
+        $params = ['mainId' => 'foo', 'id' => 'bar:'];
+        $this->assertEquals( '/foo/foo/bar:?', $this->routeCleaner->makeRoute( '/foo/:mainId/:id', $params) );
     }
 
     /**

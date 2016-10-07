@@ -3,7 +3,7 @@
     "description": "A route helper library for PHP",
     "minimum-stability": "stable",
     "homepage": "https://github.com/philasearch/php-route-helper",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "authors": [
         {
             "name": "Thomas Muntaner",

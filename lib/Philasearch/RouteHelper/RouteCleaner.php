@@ -25,7 +25,7 @@ class RouteCleaner
     {
         $additional = [];
 
-        preg_match_all('/:[a-zA-Z0-9_]*|:[a-zA-Z0-9_]*/', $dirtyRoute, $foundParams );
+        preg_match_all('/:[a-zA-Z0-9]*|:[a-zA-Z0-9]*/', $dirtyRoute, $foundParams );
         $matches = $foundParams[0];
 
         foreach( $params as $key => $value )
