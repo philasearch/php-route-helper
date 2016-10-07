@@ -15,7 +15,7 @@ use Philasearch\RouteHelper\Exceptions\RouteMissingParameterException as ParamMi
 /**
  * Class RouteCleaner
  *
- * Cleans the routes and returns 
+ * Cleans the routes and returns
  *
  * @package Philasearch\RouteHelper
  */
@@ -24,6 +24,9 @@ class RouteCleaner
     public function makeRoute ( $dirtyRoute, $params )
     {
         $additional = [];
+
+        preg_match_all('/:[a-zA-Z0-9_]*|:[a-zA-Z0-9_]*/', $dirtyRoute, $foundParams );
+        $matches = $foundParams[0];
 
         foreach( $params as $key => $value )
         {
@@ -34,13 +37,21 @@ class RouteCleaner
             else
             {
                 $dirtyRoute = str_replace( ":{$key}", $value, $dirtyRoute );
+                foreach ( $matches as $paramKey => $paramValue )
+                {
+                    if ( $paramValue == ":{$key}" )
+                    {
+                        unset($matches[$paramKey]);
+                        break;
+                    }
+                }
             }
         }
 
-        if ( strpos( $dirtyRoute, ":" ) !== false )
+        if ( $matches != [] )
         {
-            preg_match('/:[a-zA-Z0-9]*/', $dirtyRoute, $param );
-            throw new ParamMissing( ltrim($param[0], ':') );
+            $keys = array_keys($matches);
+            throw new ParamMissing($matches[$keys[0]]);
         }
 
         return $dirtyRoute . '?' . http_build_query( $additional );
